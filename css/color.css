@@ -1,0 +1,116 @@
+/*==================================
+Custom Dark Theme Styles
+==================================*/
+:root {
+	--theme-ordinary-color: #e0e0e0;  /* Light gray for text */
+	--theme-primary-color: #2196F3;  /* Material blue for primary elements */
+	--theme-secondary-color: #37474F;  /* Dark blue-gray for secondary elements */
+	--theme-white-color: #FFFFFF;  /* White for font color */
+	--theme-light-color: #2C3E50;  /* Dark blue-gray background */
+	--theme-gray-color: #000000;  /* Black for background */
+	--theme-footer-color: #455A64;  /* Dark blue-gray for footer */
+	--theme-dark-color: #1F2C3D;  /* Very dark blue for background */
+	--text-light-color: #B0BEC5;  /* Light gray for text in dark areas */
+	--theme-primary-opacity-color: rgba(33, 150, 243, 0.5);  /* Primary color with opacity */
+	--theme-secondary-opacity-color: rgba(55, 71, 79, 0.7);  /* Secondary color with opacity */
+  }
+  
+  /*==================================
+  Font Styles
+  ==================================*/
+  :root {
+	--theme-ordinary-font: 'Roboto', sans-serif;  /* Roboto font for normal text */
+	--theme-highlight-font: 'Playfair Display', serif;  /* Playfair Display font for titles */
+  }
+  
+  /*==================================
+  Body Styles
+  ==================================*/
+  body {
+	font-family: var(--theme-ordinary-font);
+	color: var(--theme-ordinary-color);
+	background-color: var(--theme-dark-color);
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+  }
+  
+  /*==================================
+  Link Styles
+  ==================================*/
+  a {
+	color: var(--theme-primary-color);
+	text-decoration: none;
+  }
+  
+  a:hover {
+	color: var(--theme-secondary-color);
+  }
+  
+  /*==================================
+  Button Styles
+  ==================================*/
+  .button {
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: var(--theme-primary-color);
+	color: var(--theme-white-color);
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  }
+  
+  .button:hover {
+	background-color: var(--theme-secondary-color);
+	color: var(--theme-white-color);
+  }
+  
+  /*==================================
+  Input Styles
+  ==================================*/
+  input {
+	padding: 10px;
+	border: 1px solid var(--theme-gray-color);
+	border-radius: 5px;
+	background-color: var(--theme-light-color);
+	color: var(--theme-white-color);
+	transition: border-color 0.3s ease-in-out;
+  }
+  
+  input:focus {
+	border-color: var(--theme-primary-color);
+  }
+  
+  /*==================================
+  Card Styles
+  ==================================*/
+  .card {
+	background-color: var(--theme-light-color);
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .card:hover {
+	box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  /*==================================
+  Typography Styles
+  ==================================*/
+  h1, h2, h3, h4, h5, h6 {
+	font-family: var(--theme-highlight-font);
+	color: var(--theme-white-color);
+  }
+  
+  /*==================================
+  Footer Styles
+  ==================================*/
+  footer {
+	background-color: var(--theme-footer-color);
+	color: var(--theme-white-color);
+	padding: 20px;
+  }
+  
